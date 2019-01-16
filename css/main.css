@@ -25,7 +25,7 @@ h2 {
 header, main, footer {
     margin: 1.25rem auto;
     padding: .5rem;
-    max-width: 500px;
+    max-width: 1000px;
 }
 
 header, footer, footer a {
@@ -35,7 +35,7 @@ header, footer, footer a {
 }
 
 header img {
-    width: 10px;
+    width: 200px;
     height: auto;
     float: right;
 }
