@@ -17,7 +17,7 @@ header {
 
 header h1 {
     margin-bottom: 0px;
-    font-size: 250%;
+    font-size: 200%;
     font-family: 'Playfair Display SC', serif;
 }
 
@@ -39,7 +39,7 @@ div.motto {
     font-family: 'Courgette', cursive;
     margin-top: 0px;
     margin-bottom: 1%;
-    font-size: 100%;
+    font-size: 75%;
 }
 
 nav {
