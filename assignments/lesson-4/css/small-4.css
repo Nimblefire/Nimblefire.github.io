@@ -17,7 +17,7 @@ header {
 
 header h1 {
     margin-bottom: 0px;
-    font-size: 2rem;
+    font-size: 250%;
     font-family: 'Playfair Display SC', serif;
 }
 
@@ -32,14 +32,14 @@ header img {
 .headings {
     display: inline-block;
 	vertical-align: middle;
-    margin: 5px;
+    margin: 0.1%;
 }
 
 div.motto {
     font-family: 'Courgette', cursive;
     margin-top: 0px;
-    margin-bottom: 1em;
-    font-size: 15px;
+    margin-bottom: 1%;
+    font-size: 100%;
 }
 
 nav {
