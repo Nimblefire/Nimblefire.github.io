@@ -43,11 +43,14 @@ div.motto {
 }
 
 nav {
-    background-color:#FFD700; 
+    background-color:#FFD700;
+    margin: 10px;
+    padding-top: 0.01px;
+    padding-bottom: 0.0.1mm;
 }
 
 nav li {
-    margin: 0px;
+    margin: 2px;
     list-style-type: none;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -74,7 +77,6 @@ main section {
 main section img {
     width: 300px;
     height: auto;
-    float: inherit;
 }
 
 article {
@@ -83,7 +85,7 @@ article {
 }
 
 article img {
-    width: 200px;
+    width: 300px;
     height: auto;
 }
 
