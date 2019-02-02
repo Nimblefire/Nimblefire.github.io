@@ -6,6 +6,11 @@
             <meta name="description" content="">
             <link rel="stylesheet" href="css/main.css">
             <title>Page Not Found</title>
+            <script>
+                function goBack() {
+                    window.history.back()
+                }
+            </script>
     </head>
     <body style="text-align: center">
         <header style="padding: 1rem;">
@@ -17,7 +22,7 @@
         <footer>
             <p>
                 &copy 2019 - Stefano Da Ponte - Location: Italy - 
-                <a href="index.html">Back</a>
+                <a onclick="goBack()">Back</a> 
             </p>
         </footer>
     </body>

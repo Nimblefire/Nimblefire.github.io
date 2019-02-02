@@ -54,11 +54,7 @@ nav li {
 
 nav li.current-page {
     background-color: #FF8C00;
-    border: 1px solid rgb(255, 188, 3);
-}
-
-article {
-    margin: 15px;
+    border: 2px solid rgb(255, 188, 3);
 }
 
 nav a {
@@ -66,9 +62,13 @@ nav a {
     text-decoration: none;
 }
 
-article img {
-    width: 200px;
-    height: auto;
+main {
+    margin: 50px;
+}
+
+main section {
+    background-color: #fff;
+    margin: 0px 400px 0px 400px;
 }
 
 main section img {
@@ -76,3 +76,23 @@ main section img {
     height: auto;
     float: inherit;
 }
+
+article {
+    margin: 15px;
+    background-color: #fff;
+}
+
+article img {
+    width: 200px;
+    height: auto;
+}
+
+footer section.contact-info{
+    background-color: #000000;
+    color: #fff;
+}
+
+footer p {
+    font-size: 0.8rem;
+}
+

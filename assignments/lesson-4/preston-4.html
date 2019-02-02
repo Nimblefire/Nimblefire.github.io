@@ -4,9 +4,14 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
     <meta name="description" content="Weather page for Preston">
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
     <link rel="stylesheet" href="css/small-4.css">
     <title>HelloWeather | Preston</title>
-    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+    <script>
+        function goBack() {
+            window.history.back()
+        }
+    </script>
 </head>
 <body>
     <header>
@@ -17,7 +22,7 @@
         </section>
         <nav>
             <ul>
-                <li><a href="../../work-in-progress.html">Home</a></li>
+                <li><a onclick="goBack()">Home</a></li>
                 <li class="current-page"><a href="#">Preston</a></li>
                 <li><a href="../../work-in-progress.html">Soda Springs</a></li>
                 <li><a href="../../work-in-progress.html">Fish Haven</a></li>
@@ -30,22 +35,29 @@
     <main>
         <section>
             <h2>Preston, Idaho</h2>
-            <img src="https://www.ihatepresentations.com/wp-content/uploads/2017/01/hero-1.jpg" alt="Hero Image">
+            <img 
+            src="https://www.ihatepresentations.com/wp-content/uploads/2017/01/hero-1.jpg" 
+            alt="Hero Image">
             <div class="summary">
                 Weather Summary
             </div>
         </section>
         <article>
-            <section>
-                <h3>Article Title Placeholder</h3>
-                <p>Article text</p>
-            </section>
-            <img src="http://australianaudioguide.com/wp-content/uploads/2016/10/RA-Podcast-Thumbnail.png" alt="Article Image">
+            <h3>Article Title Placeholder</h3>
+            <p>
+                Article text
+            </p>
+            <img 
+            src="http://australianaudioguide.com/wp-content/uploads/2016/10/RA-Podcast-Thumbnail.png" 
+            alt="Article Image">
         </article>
     </main>
     <footer>
-            <section>
-                Contact information
+            <section class="contact-info">
+                <h4>Contact information</h4>
+                <p>
+                    Here are my contact information
+                </p>
             </section>
             <map name="">map coming</map>
             <p>&copy; 2019 I do not own the images on this webpage - Stefano Da Ponte - 
