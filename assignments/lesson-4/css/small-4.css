@@ -18,7 +18,7 @@ header {
 header h1 {
     margin-bottom: 0px;
     font-size: 2rem;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Playfair Display SC', serif;
 }
 
 header img {
@@ -36,7 +36,7 @@ header img {
 }
 
 div.motto {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Courgette', cursive;
     margin-top: 0px;
     margin-bottom: 1em;
     font-size: 15px;
