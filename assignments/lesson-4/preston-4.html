@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta lang="en-us">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
+    <meta name="description" content="Weather page for Preston">
+    <link rel="stylesheet" href="css/small-4.css">
+    <title>HelloWeather | Preston</title>
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+</head>
+<body>
+    <header>
+            <img src="http://weather.theage.com.au/styles/icons/theage/large/mostly_sunny.png?1480640736" alt="Website logo">
+        <section class="headings">
+            <h1>Hello Weather!</h1>
+            <div class="motto"><em>Are you going out? We will tell you how it's going to be!</em></div>
+        </section>
+        <nav>
+            <ul>
+                <li><a href="../../work-in-progress.html">Home</a></li>
+                <li class="current-page"><a href="#">Preston</a></li>
+                <li><a href="../../work-in-progress.html">Soda Springs</a></li>
+                <li><a href="../../work-in-progress.html">Fish Haven</a></li>
+                <li><a href="../../work-in-progress.html">Storm Center</a></li>
+                <li><a href="../../work-in-progress.html">Gallery</a></li>
+                <li><a href="../../work-in-progress.html">Menu</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Preston, Idaho</h2>
+            <img src="https://www.ihatepresentations.com/wp-content/uploads/2017/01/hero-1.jpg" alt="Hero Image">
+            <div class="summary">
+                Weather Summary
+            </div>
+        </section>
+        <article>
+            <section>
+                <h3>Article Title Placeholder</h3>
+                <p>Article text</p>
+            </section>
+            <img src="http://australianaudioguide.com/wp-content/uploads/2016/10/RA-Podcast-Thumbnail.png" alt="Article Image">
+        </article>
+    </main>
+    <footer>
+            <section>
+                Contact information
+            </section>
+            <map name="">map coming</map>
+            <p>&copy; 2019 I do not own the images on this webpage - Stefano Da Ponte - 
+                <a href="../../work-in-progress.html">Terms of Use</a> - 
+                <span id="datetime"></span>
+            </p>
+            <script>
+                var dt = new Date();
+                document.getElementById("datetime").innerHTML = dt.toLocaleDateString();
+            </script>
+    </footer>
+</body>
+</html>
