@@ -44,8 +44,8 @@ div.motto {
 nav {
     background-color:#FFD700;
     margin: 10px;
-    padding-top: 0.01px;
-    padding-bottom: 0.01mm;
+    padding-top: 0px;
+    padding-bottom: 0px;
 }
 
 nav li {
