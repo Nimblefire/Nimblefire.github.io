@@ -82,8 +82,8 @@ h2 {text-align: center;font-size:2rem;text-shadow:3px 3px 5px #777;}
 
 .stats {
 	position: absolute;
-	top: 25px;
-	right: 50px;
+	top: 1vw;
+	right: 2vw;
 	background: radial-gradient(#eee, #4567aa);
 	border: 1px solid #000;
 	padding: 1.5rem;
