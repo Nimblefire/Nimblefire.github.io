@@ -134,22 +134,53 @@ article {
     margin: 15px;
     background-color: rgb(160, 160, 160);
     padding-left: 1%;
-    position: relative;
+    border: 2px solid rgb(201, 201, 201);
+}
+
+.author {
+    font-size: 70%;
+    padding: 0px;
+    margin-top: -2%;
+    font-style: italic;
 }
 
 article li {
     list-style-position: inside;
 }
 
-article img {
-    width: 10%;
+.article-div{
+    border: 1px;
+}
+
+.article-div img {
+    width: 20%;
     height: auto;
     float: right;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    margin-right: 3%;
 }
 
 footer section.contact-info{
     background-color: #000000;
     color: #fff;
+    display: inline-block;
+    text-align: initial;
+    padding: 1%;
+}
+
+footer section.contact-info p img {
+    background-color: #fff;
+    width: 2%;
+    height: auto;
+}
+
+img.map{
+    margin-top: -23%;
+    margin-right: 30%;
+    width: 10vw;
+    height: auto;
+    float: right;
 }
 
 footer p {
