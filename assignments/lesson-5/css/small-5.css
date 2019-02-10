@@ -137,6 +137,10 @@ article li {
     margin-bottom: auto;
 }
 
+article a {
+    color: rgb(255, 255, 255);
+}
+
 footer section.contact-info{
     background-color: #000000;
     color: #fff;
