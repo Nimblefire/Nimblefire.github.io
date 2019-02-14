@@ -133,6 +133,8 @@ article li {
     width: 70%;
     height: auto;
     float: left;
+    margin-top: 1%;
+    margin-bottom: auto;
 }
 
 article a {
