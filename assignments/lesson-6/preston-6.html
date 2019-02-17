@@ -35,8 +35,10 @@
         <h2>Preston, Idaho</h2>
         <div class="herodiv">
             <img 
-            src="https://images.pexels.com/photos/1694642/pexels-photo-1694642.jpeg?cs=srgb&dl=idaho-lake-landscape-1694642.jpg&fm=jpg" 
-            alt="Mountains and Lake Image">
+            src="image/cit230_image_franklinOriginal.jpeg" sizes="100vw" 
+            alt="Mountains and Lake Image" 
+            srcset="image/cit230_image_franklin480.jpeg 500w,
+                    image/cit230_image_franklin700.jpeg 600w">
             <section class="stats">
                 <h3>Weather Summary</h3>
                 <p>Currently: <span id="value1">Sunny</span></p>
@@ -130,9 +132,8 @@
                 <a href="../../work-in-progress.html">Terms of Use</a> <br>
                 <span id="datetime"></span>
             </p>
-            <script>
-                var dt = new Date();
-                document.getElementById("datetime").innerHTML = dt.toLocaleDateString();
+            <script src="scripts/currentdate.js">
+                
             </script>
     </footer>
 </body>
