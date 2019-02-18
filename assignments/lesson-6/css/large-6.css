@@ -74,6 +74,7 @@ nav li {
     margin: 1vw;
     list-style-type: none;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border: 1px solid red;
 }
 
 nav button.menu {
