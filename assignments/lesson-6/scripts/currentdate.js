@@ -12,7 +12,7 @@ function printCurrentDate() {
     weekday[4] = "Thursday";
     weekday[5] = "Friday";
     weekday[6] = "Saturday";
-    var currentWeekday = weekday[d.getDay()];
+    var currentWeekday = weekday[n.getDay()];
     document.getElementById("datetime").innerHTML =currentWeekday + ", " + d + " " + m + " " + y;
 }
 
