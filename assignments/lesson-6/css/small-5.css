@@ -56,8 +56,11 @@ nav {
 }
 
 nav li.current-page {
-    background-color: #FF8C00;
-    border: 2px solid rgb(255, 188, 3);
+    background: #ff8c00; /* Old browsers */
+    background: -moz-linear-gradient(top, #ff8c00 0%, #ffbc03 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #ff8c00 0%,#ffbc03 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #ff8c00 0%,#ffbc03 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff8c00', endColorstr='#ffbc03',GradientType=0 ); /* IE6-9 */
 }
 
 nav li a {
@@ -65,6 +68,7 @@ nav li a {
     text-decoration: none;
     border-top: 1px solid rgb(0, 0, 0, 0.3);
     display: block;
+    margin: 0;
 }
 
 nav a:hover {
