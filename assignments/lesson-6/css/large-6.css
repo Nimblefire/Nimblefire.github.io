@@ -61,6 +61,7 @@ nav li.current-page {
 nav li a {
     color: rgb(87, 27, 11);
     text-decoration: none;
+    display: block;
 }
 
 nav a:hover {
