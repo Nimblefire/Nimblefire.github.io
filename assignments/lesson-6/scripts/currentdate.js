@@ -28,7 +28,7 @@ function printCurrentDate() {
 
     var currentMonth = monthName[n.getMonth()+1];
     var currentWeekday = weekday[n.getDay()];
-    document.getElementById("datetime").innerHTML =currentWeekday + ", " + d + " " + m + " " + y;
+    document.getElementById("datetime").innerHTML =currentWeekday + ", " + d + " " + currentMonth + " " + y;
 }
 
 function toggleMenu(){
