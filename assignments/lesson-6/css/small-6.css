@@ -82,7 +82,7 @@ nav a:hover {
 nav button.menu {
     background: transparent;
     border: none;
-    margin: auto;
+    margin: 0 auto;
     padding:0;
     font-size: 1.6rem;
     display: block;
