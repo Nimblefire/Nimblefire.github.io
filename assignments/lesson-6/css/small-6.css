@@ -82,7 +82,7 @@ nav a:hover {
 nav button.menu {
     background: transparent;
     border: none;
-    margin: .2rem 2%;
+    margin: 0 2%;
     font-size: 1.6rem;
     display: block;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
