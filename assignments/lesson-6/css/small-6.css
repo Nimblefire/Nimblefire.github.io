@@ -49,7 +49,11 @@ div.motto {
 }
 
 nav {
-    background-color:#FFD700;
+    background: #ffd700;
+    background: -moz-radial-gradient(center, ellipse cover, #ffd700 0%, #ffbc03 100%);
+    background: -webkit-radial-gradient(center, ellipse cover, #ffd700 0%,#ffbc03 100%);
+    background: radial-gradient(ellipse at center, #ffd700 0%,#ffbc03 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffd700', endColorstr='#ffbc03',GradientType=1 );
     margin: 10px;
     padding-top: 0px;
     padding-bottom: 0px;
