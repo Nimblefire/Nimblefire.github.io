@@ -52,10 +52,10 @@ nav {
 
 nav li.current-page {
     background: #ff8c00;
-    background: -moz-linear-gradient(top, #ff8c00 0%, #ffbc03 100%);
-    background: -webkit-linear-gradient(top, #ff8c00 0%,#ffbc03 100%);
-    background: linear-gradient(to bottom, #ff8c00 0%,#ffbc03 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff8c00', endColorstr='#ffbc03',GradientType=0 );
+    background: -moz-radial-gradient(center, ellipse cover, #ff8c00 0%, #ffbc03 100%);
+    background: -webkit-radial-gradient(center, ellipse cover, #ff8c00 0%,#ffbc03 100%);
+    background: radial-gradient(ellipse at center, #ff8c00 0%,#ffbc03 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff8c00', endColorstr='#ffbc03',GradientType=1 );
 }
 
 nav li a {
