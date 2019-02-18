@@ -55,10 +55,6 @@ nav {
     padding-bottom: 0px;
 }
 
-nav li {
-    display: block;
-}
-
 nav li.current-page {
     background-color: #FF8C00;
     border: 2px solid rgb(255, 188, 3);
@@ -68,6 +64,7 @@ nav li a {
     color: rgb(87, 27, 11);
     text-decoration: none;
     border-top: 1px solid rgb(0, 0, 0, 0.3);
+    display: block;
 }
 
 nav a:hover {
