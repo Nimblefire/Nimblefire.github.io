@@ -4,6 +4,10 @@
     font-family: 'Times New Roman', Times, serif;
 }
 
+.hide {
+    display: none;
+}
+
 body {
     background-color: #fff;
     text-align: center;
@@ -53,13 +57,7 @@ nav {
 
 nav li {
     display: none;
-}
 
-nav li.menu {
-    margin: 2px;
-    display: block;
-    list-style-type: none;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 nav li.current-page {
@@ -67,13 +65,23 @@ nav li.current-page {
     border: 2px solid rgb(255, 188, 3);
 }
 
-nav a {
+nav li a {
     color: rgb(87, 27, 11);
     text-decoration: none;
+    border-top: 1px solid rgb(0, 0, 0, 0.3);
 }
 
 nav a:hover {
     color: #0059ff;
+}
+
+nav button.menu {
+    background: transparent;
+    border: none;
+    margin: .2rem 2%;
+    font-size: 1.6rem;
+    display: block;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 main {

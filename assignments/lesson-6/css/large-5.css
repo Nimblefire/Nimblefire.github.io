@@ -50,19 +50,12 @@ nav {
     padding-bottom: 0px;
 }
 
-
-nav li {
-    margin: 2px;
-    list-style-type: none;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
 nav li.current-page {
     background-color: #FF8C00;
     border: 2px solid rgb(255, 188, 3);
 }
 
-nav a {
+nav li a {
     color: rgb(87, 27, 11);
     text-decoration: none;
 }
@@ -79,12 +72,7 @@ nav li {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-nav li.current-page {
-    background-color: #FF8C00;
-    border: 2px solid rgb(255, 188, 3);
-}
-
-nav .menu {
+nav button.menu {
     display: none;
 }
 
