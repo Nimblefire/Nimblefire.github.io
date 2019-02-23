@@ -137,9 +137,14 @@ h2 {text-align: center;font-size:2rem;text-shadow:3px 3px 5px #777;}
     align-content: center;
 }
 
-main img {
+main .herodiv img {
     width: 80%;
     height: auto;
+}
+
+.imgcontainer {
+    display: grid;
+    grid-template: 1fr 1fr / 1fr 1fr 1fr 1fr 1fr 1fr;
 }
 
 article {

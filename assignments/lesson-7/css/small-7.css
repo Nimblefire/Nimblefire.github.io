@@ -127,9 +127,14 @@ section.five-day-forecast{
     display: none;
 }
 
-main img {
+main .herodiv img {
     width: 80%;
     height: auto;
+}
+
+.imgcontainer {
+    display: grid;
+    grid-template-columns: 1fr;
 }
 
 article {
