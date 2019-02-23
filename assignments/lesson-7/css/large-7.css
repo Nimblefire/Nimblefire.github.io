@@ -54,6 +54,12 @@ nav {
     padding-bottom: 0px;
 }
 
+nav #navigationTab {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+}
+
 nav li.current-page {
     background: #ff8c00; /* Old browsers */
     background: -moz-linear-gradient(top, #ff8c00 0%, #ffbc03 100%); /* FF3.6-15 */

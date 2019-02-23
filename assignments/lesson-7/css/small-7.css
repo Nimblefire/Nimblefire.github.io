@@ -59,6 +59,11 @@ nav {
     padding-bottom: 0px;
 }
 
+nav ul {
+    display: flex;
+    flex-direction: column;
+}
+
 nav li.current-page {
     background: #ff8c00; /* Old browsers */
     background: -moz-linear-gradient(top, #ff8c00 0%, #ffbc03 100%); /* FF3.6-15 */

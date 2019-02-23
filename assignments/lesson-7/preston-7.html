@@ -11,6 +11,7 @@
     <link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display+SC" rel="stylesheet">
     <script src="scripts/currentdate.js"></script>
+    <script src="scripts/windchill.js"></script>
     <title>HelloWeather | Preston</title>
 </head>
 <body>
@@ -43,10 +44,11 @@
             <section class="stats">
                 <h3>Weather Summary</h3>
                 <p>Currently: <span id="value1">Sunny</span></p>
-                <p>High: <span id="value2">76°F</span></p>
-                <p>Wind Chill: <span id="value3">78°F</span></p>
-                <p>Humidity: <span id="value4">69%</span></p>
-                <p>Wind Speed: <span id="value5">5 mph</span></p>
+                <p>High: <span id="value2">76</span>°F</p>
+                <p>Wind Chill: <span id="value3"></span></p><!--78°F-->
+                <p>Humidity: <span id="value4">69</span>%</p>
+                <p>Wind Speed: <span id="value5">5</span> mph</p>
+                <script>windchill();</script>
             </section>
         </div>
         <section class="five-day-forecast">
