@@ -27,18 +27,21 @@ header h1 {
     font-family: 'Playfair Display SC', serif;
 }
 
-header img {
-	display: inline-block;
-	vertical-align: middle;
+header img  {
     margin: 0px;
-    width: 8%;
+    width: 100%;
     height: auto;
 }
 
 .headings {
-    display: inline-block;
-	vertical-align: middle;
-    margin: 0.1%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flexitem {
+    flex-basis: 200px;
 }
 
 div.motto {
