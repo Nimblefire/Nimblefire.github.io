@@ -132,9 +132,26 @@ main .herodiv img {
     height: auto;
 }
 
+main section.photogallery {
+    margin-bottom: 2%;
+} 
+
+main section.photogallery h2 {
+    text-align: left;
+    margin-left: 4%;
+}
 .imgcontainer {
     display: grid;
     grid-template-columns: 1fr;
+}
+
+.imgcontainer img{width: 100%;height: auto;}
+
+.imgcontainer figure:hover {box-shadow: 0 0 50px #333;}
+
+.imgcontainer figure {
+    margin-bottom: 2%;
+    box-shadow: 0 0 30px rgba(51, 51, 51, 0.8);
 }
 
 article {
@@ -183,7 +200,7 @@ footer section.contact-info{
 
 footer section.contact-info p img {
     background-color: #fff;
-    width: 2%;
+    width: 3%;
     height: auto;
 }
 
@@ -194,6 +211,7 @@ img.map{
     float: inline-end;
 }
 
-footer p {
+footer>p {
     font-size: 0.8rem;
+    margin: 0 2% 2% 0;
 }
