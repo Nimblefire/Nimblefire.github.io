@@ -105,10 +105,14 @@ main {
     margin:0 auto;
 }
 
-.five-day-forecast, .article-div, .herodiv {
+.article-div, .herodiv {
     max-width: 820px;
     margin: auto;
 } 
+
+section.five-day-forecast{
+    display: none;
+}
 
 h2 {text-align: center;font-size:2rem;text-shadow:3px 3px 5px #777;}
 
