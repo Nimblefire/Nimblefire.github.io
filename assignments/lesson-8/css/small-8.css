@@ -162,6 +162,29 @@ main section.photogallery h2 {
     display: none;
 }
 
+.first-image {
+    display: none;
+    
+}
+
+.second-image {
+    display: none;
+}
+
+form {
+    width: fit-content;
+    height: auto;
+    margin: 2% auto;
+    padding: 2%;
+    border: 1px solid rgb(77, 77, 78);
+    box-shadow: 0 0 30px rgb(77, 77, 78, 0.5);
+}
+
+form table.form-table {
+    border-spacing: 1vw;
+    text-align: left;
+} 
+
 article {
     text-align: left;
     margin: 15px;
