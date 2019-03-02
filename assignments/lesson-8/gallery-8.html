@@ -6,13 +6,11 @@
     <meta name="description" content="Weather page for Preston">
     <link rel="shortcut icon" type="image/x-icon" href="../../favicon.ico">
     <link rel="stylesheet" href="../../css/normalize.css">
-    <link rel="stylesheet" href="css/small-8.css" media="(max-width: 399px)">
+    <link rel="stylesheet" href="css/large--8.css" media="(min-width: 800px)">
     <link rel="stylesheet" href="css/medium-8.css" media="(min-width: 400px) and (max-width: 799px)">
-    <link rel="stylesheet" href="css/large-8.css" media="(min-width: 800px)">
-    <link rel="stylesheet" href="css/table.css">
+    <link rel="stylesheet" href="css/small-8.css" media="(max-width: 400px)">
     <link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display+SC" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
     <script src="scripts/currentdate.js"></script>
     <script src="scripts/windchill.js"></script>
     <title>HelloWeather | Preston</title>
@@ -30,59 +28,44 @@
             <button onclick="toggleMenu()" class="menu">&equiv;</button>
             <ul id="navigationTab" class="hide">
                 <li><a href="../../index.html">Home</a></li>
-                <li class="current-page"><a href="#">Preston</a></li>
+                <li><a href="preston-8.html">Preston</a></li>
                 <li><a href="../../work-in-progress.html">Soda Springs</a></li>
                 <li><a href="../../work-in-progress.html">Fish Haven</a></li>
-                <li><a href="stormcenter.html">Storm Center</a></li>
-                <li><a href="gallery-7.html">Gallery</a></li>
+                <li><a href="../../work-in-progress.html">Storm Center</a></li>
+                <li class="current-page"><a href="#">Gallery</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <table>
-            <thead>
-                <th colspan="3">ACME Wildwest</th>
-            </thead>
-            <tbody>
-                <tr>
-                    <th>Period</th>
-                    <th>Sales</th>
-                    <th>Sales Goals</th>
-                </tr>
-                <tr>
-                    <td>August</td>
-                    <td>$3,590</td>
-                    <td>$4,000</td>
-                </tr>
-                <tr>
-                    <td>September</td>
-                    <td>$4,420</td>
-                    <td>$5,000</td>
-                </tr>
-                <tr>
-                    <td>October</td>
-                    <td>$4,870</td>
-                    <td>$5,000</td>
-                </tr>
-                <tr>
-                    <td>November</td>
-                    <td>$8,610</td>
-                    <td>$7,500</td>
-                </tr>
-                <tr>
-                    <td>Black Friday</td>
-                    <td colspan="2">$3,200</td>
-                </tr>
-                <tr>
-                    <td>December</td>
-                    <td>$6,820</td>
-                    <td>$7,500</td>
-                </tr>
-            </tbody>
-            <tfoot>
-                <td colspan="3">Compiled 12.20.2020 by bRauls</td>
-            </tfoot>
-        </table>
+        <section class="photogallery">
+            <h2>Weather Gallery</h2>
+            <div class="imgcontainer">
+                <figure class="img img1">
+                    <img src="image/fog-clouds-mountains-weather-thumb.jpg" alt="Stormclouds">
+                    <figcaption>Cumulonembus</figcaption>
+                </figure>
+                <figure class="img img2">
+                    <img src="image/clouds-sky-weather-trees-thumb.jpg" alt="">
+                    <figcaption>Storm over ...</figcaption>
+                </figure>
+                <figure class="img img3">
+                    <img src="image/nature-landscape-forest-long-exposure-thumb.jpg" alt="">
+                    <figcaption>Sun over lake in ...</figcaption>
+                </figure>
+                <figure class="img img4">
+                    <img src="image/sunrise-clouds-sky-sunset-thumb.jpg" alt="">
+                    <figcaption>Snow-covered ...</figcaption>
+                </figure>
+                <figure class="img img5">
+                    <img src="image/weather-vane-north-south-direction-thumb.jpg" alt="">
+                    <figcaption>Rain in ...</figcaption>
+                </figure>
+                <figure class="img img6">
+                    <img src="image/away-hiking-view-bavaria-thumb.jpg" alt="">
+                    <figcaption>Image to be decided</figcaption>
+                </figure>
+            </div>
+        </section>
     </main>
     <footer>
             <section class="contact-info">

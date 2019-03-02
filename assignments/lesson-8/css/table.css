@@ -3,7 +3,7 @@ table {
     border-collapse: collapse;
     box-shadow: 10px 10px 30px -2px rgba(51, 51, 51, 0.8);
     width: 20%;
-    height: auto;
+    height: 350px;
 }
 
 td, th {
@@ -43,6 +43,10 @@ tbody tr:nth-child(6) td:nth-child(1) {
 tbody tr:nth-child(5) td:nth-child(3) {
     background-color: #628ca6;
     color: white;
+}
+
+tbody td:nth-child(2), tbody td:nth-child(3) {
+    padding: 0;
 }
 
 tfoot {
