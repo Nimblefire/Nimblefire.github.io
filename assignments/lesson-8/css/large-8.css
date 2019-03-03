@@ -221,6 +221,10 @@ form table.form-table {
     text-align: left;
 }
 
+.thankyou-message {
+    margin: 10% auto;
+}
+
 article {
     text-align: left;
     margin: 15px;

@@ -164,7 +164,6 @@ main section.photogallery h2 {
 
 .first-image {
     display: none;
-    
 }
 
 .second-image {
@@ -184,6 +183,10 @@ form table.form-table {
     border-spacing: 1vw;
     text-align: left;
 } 
+
+.thankyou-message {
+    margin: 10% auto;
+}
 
 article {
     text-align: left;

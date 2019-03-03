@@ -200,6 +200,10 @@ h2 {text-align: center;font-size:2rem;text-shadow:3px 3px 5px #777;}
     display: none;
 }
 
+.thankyou-message {
+    margin: 10% auto;
+}
+
 form {
     /*grid-area: 1/1/3/2;*/
     width: fit-content;
