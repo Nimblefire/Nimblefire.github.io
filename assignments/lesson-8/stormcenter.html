@@ -53,45 +53,46 @@
                     <table class="form-table">
                         <tr>
                             <td><label for="fullname">Fullname: </label></td>
-                            <td colspan="3"><input type="text" id="fullname" name="fullname"  pattern="[A-Za-z]" minlenght="6" required></td>
+                            <td><input type="text" id="fullname" name="fullname"  pattern="[A-Za-z]" minlength="6" required></td>
                         </tr>
                         <tr>
                             <td><label for="email">Email: </label></td>
-                            <td colspan="3"><input type="email" id="email" name="email" placeholder="example@example.com"></td>
+                            <td><input type="email" id="email" name="email" placeholder="example@example.com"></td>
                         </tr>
                         <tr>
                             <td><label for="telephone-number">Telephone Number: </label></td>
-                            <td colspan="3"><input type="tel" id="telephone-number" name="telephone-number" required></td>
+                            <td><input type="tel" id="telephone-number" name="telephone-number" required></td>
                         </tr>
                         <tr>
                             <td><label for="zip-code">Zip Code: </label></td>
-                            <td colspan="3"><input type="number" id="zip-code" name="zip-code" required></td>
+                            <td><input type="number" id="zip-code" name="zip-code" required></td>
                         </tr>
                         <tr>
                             <td><label for="storm-date">Storm Date: </label></td>
-                            <td colspan="3"><input type="date" id="storm-date" name="storm-date" required></td>
+                            <td><input type="date" id="storm-date" name="storm-date" required></td>
                         </tr>
                         <tr>
                             <td><label for="storm-type">Storm Type: </label></td>
-                            <td colspan="3"><input type="text" id="storm-type" name="storm-type" list="storm-tipes" required></td>
-                            <datalist id="storm-tipes">
+                            <td><input type="text" id="storm-type" name="storm-type" list="storm-tipes" required>
+                                <datalist id="storm-tipes">
                                     <option value="Flash Flood"></option>
                                     <option value="Hail"></option>
                                     <option value="Hurricane"></option>
                                     <option value="Thunderstorm"></option>
                                     <option value="Tornado"></option>
                                 </datalist>
+                            </td>
                         </tr>
                         <tr>
                             <td><label for="storm-severity">Storm Severity: </label></td>
                             <td>
-                                <input type="range" id="storm-severity" name="storm-severity" value="5" min="1" max="10" step="1" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)" required>
+                                <input type="range" id="storm-severity" name="storm-severity" value="5" min="1" max="10" step="1" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
                                 <span id="ratingvalue">5</span>
                             </td>
                         </tr>
                         <tr>
                             <td><label for="storm-region">Storm Region: </label></td>
-                            <td colspan="3">
+                            <td>
                                 <select id="storm-region" name="storm-region">
                                     <option value="Select Region..." disabled selected>Select Region...</option>
                                     <option value="Preston">Preston</option>
@@ -101,9 +102,9 @@
                             </td>
                         </tr>
                         <tr>
-                            <td><label for="user-in-danger-levels">User in-danger Level: </label></td>
+                            <td><label>User in-danger Level: </label></td>
                             <td>
-                                <div id="user-in-danger-levels" name="user-in-danger-levels">
+                                <div id="user-in-danger-levels">
                                     <input type="radio" id="danger-level-1" name="danger-level" value="yes">
                                     <label for="danger-level-1">Yes &emsp;</label>
                                     
@@ -119,7 +120,7 @@
                             <td colspan="2"><label for="additional-information">Additional Information</label></td>
                         </tr>
                         <tr>
-                            <td colspan="2" rowspan="2"><textarea id="additional-information" name="additional-information">Comments and additional information...</textarea></td>
+                            <td colspan="2"><textarea id="additional-information" name="additional-information">Comments and additional information...</textarea></td>
                         </tr> 
                     </table>
                     <!--Submission Button--><button type="submit">Submit</button>
