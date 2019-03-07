@@ -1,0 +1,58 @@
+{
+    "backgrounds":[],
+    "races":[
+        {
+            "name":"Lightborn",
+            "displayname":"Lightborn",
+            "abilityscorebonuses":[
+                {
+                    "constitution":"1",
+                    "charisma":"2"
+                }
+            ],
+            "speed":"30",
+            "languages":["Common","One language"],
+            "features":[
+                {"setskillproficiency":{"persuasion":"true"}},
+                {"featuretext":"Lightborn feature:"},
+                {"featuretextwithbullet":"Advantage vs frightened saving throw"},
+                {"addspell":{"name":"Light","spelllevel":"0"}},
+                {"ifthenelse":{
+                        "if":[
+                            {"greaterthanorequal":{"first":"level","second":"3"}}
+                        ],
+                        "then":[
+                            {"featuretextwithbullet":"Can cast heroism 2 lv 1\/day"}
+                        ]
+                    }
+                },
+                {"ifthenelse":{
+                        "if":[
+                            {"greaterthanorequal":{"first":"level","second":"5"}}
+                        ],
+                        "then":[
+                            {"replacestringfromfeaturetext":{"replacementtext":"3 lv","find":"2 lv"}}
+                        ]
+                    }
+                },
+                {"ifthenelse":{
+                        "if":[
+                            {"greaterthanorequal":{"first":"level","second":"7"}}
+                        ],
+                        "then":[
+                            {"replacestringfromfeaturetext":{"replacementtext":"4 lv","find":"3 lv"}}
+                        ]
+                    }
+                },
+                {"featuretextwithbullet":"When drops to 0 HP, but doesn't die, goes to 1 HP instead, can cast heroism at 30 ft, if available. Hair glows with bright light 10 ft. 1\/long rest"}
+            ]
+        }
+    ],
+    "subraces":[],
+    "classes":[],
+    "archetypes":[],
+    "sharedclassfeatures":[],
+    "sharedclassfeaturemenus":[],
+    "feats":[],
+    "weapons":[]
+}
