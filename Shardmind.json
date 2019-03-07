@@ -10,13 +10,10 @@
     "speed":"30",
     "languages":["Common","Extra one"],
     "features":[
-        {"featuretext":"Shardmind Feature:"},
-        {"sharedclassfeature":{"name":"Living Construct"}},
-        {"featuretext":"Crystalline Mind"},
-        {"featuretextwithbullet":
-            {
-                "combinestrings":["Resistance to psychic damage","Telepathy within 30 ft with same language speakers"]
-            }
-        }
+        "Shardmind Features:",
+        "Living Construct",
+        "Crystalline Mind",
+        "Resistance to psychic damage",
+        "Telepathy within 30 ft with same language speakers"
     ]
 }

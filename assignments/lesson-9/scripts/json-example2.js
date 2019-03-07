@@ -1,5 +1,5 @@
 function getRequest() {
-    var requestURL = 'https://mdn.github.io/learning-area/javascript/oojs/json/superheroes.json';
+    var requestURL = 'https://Nimblefire.github.io/json-for-example.json';
     var request = new XMLHttpRequest();
     request.open('GET', requestURL);
     request.responseType = 'json';
@@ -10,7 +10,6 @@ function getRequest() {
         showHeroes(superHeroes);
     }
 }
-
 
 function populateHeader(jsonObj) {
     var myH1 = document.createElement('h1');

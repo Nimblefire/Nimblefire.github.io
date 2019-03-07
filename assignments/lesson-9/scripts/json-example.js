@@ -1,5 +1,5 @@
 function getRequest() {
-    var requestURL = 'https://https://nimblefire.github.io/Shardmind.json';
+    var requestURL = 'https://Nimblefire.github.io/Shardmind.json';
     var request = new XMLHttpRequest();
     request.open('GET', requestURL);
     request.responseType = 'json';
@@ -7,7 +7,7 @@ function getRequest() {
     request.onload = function() {
         var races = request.response;
         populateHeader(races);
-        showRace(races);
+        showFeatures(races);
     }
 }
 
@@ -22,33 +22,35 @@ function showFeatures(jsonObj) {
     var abilityBonusList = document.createElement('ul');
     for (var i = 0; i < abilityBonus.length; i++) {
         var listItem = document.createElement('li');
-        listItem.textContent = abilityBonus[i].name + abilityBonus[i].value;
+        listItem.textContent = abilityBonus[i].name + ': ' + abilityBonus[i].value;
         abilityBonusList.appendChild(listItem);
     }
-    var speed = document.createElement('p');
-    var languages = document.createElement('p');
-    var features = document.createElement('p');
+    var speedP = document.createElement('p');
+    var languagesP = document.createElement('p');
+    var featuresP = document.createElement('p');
 
-    speed.textContent = 'Speed: ' + jsonObj['speed'];
+    speedP.textContent = 'Speed: ' + jsonObj['speed'];
+    var languages = jsonObj['languages'];
     var languageList = document.createElement('ul');
-    for (var i = 0; i < jsonObj['language'].length; i++){
+    for (var i = 0; i < languages.length; i++){
         var listItem = document.createElement('li');
-        listItem.textContent = jsonObj['language'][i];
+        listItem.textContent = languages[i];
         languageList.appendChild(listItem);
     }
 
+    var features = jsonObj['features']
     var featuresList = document.createElement('ul');
-    for (var i = 0; i < jsonObj['features'].length; i++) {
+    for (var i = 0; i < features.length; i++) {
         var listItem = document.createElement('li');
-        listItem.textContent = jsonObj['features'][i];
+        listItem.textContent = features[i];
         featuresList.appendChild(listItem);
     }
 
-    languages.appendChild(languageList);
-    features.appendChild(featuresList);
+    languagesP.appendChild(languageList);
+    featuresP.appendChild(featuresList);
 
     section.appendChild(abilityBonusList);
-    section.appendChild(speed);    
-    section.appendChild(languages);
-    section.appendChild(features);
+    section.appendChild(speedP);    
+    section.appendChild(languagesP);
+    section.appendChild(featuresP);
 }
