@@ -18,6 +18,13 @@ function populateHeader(jsonObj) {
 }
 
 function showFeatures(jsonObj) {
+
+    var abilityBonusP = document.createElement('p');
+    var speedP = document.createElement('p');
+    var languagesP = document.createElement('p');
+    var featuresP = document.createElement('p');
+
+
     var abilityBonus = jsonObj['abilityscorebonuses'];
     var abilityBonusList = document.createElement('ul');
     for (var i = 0; i < abilityBonus.length; i++) {
@@ -25,11 +32,9 @@ function showFeatures(jsonObj) {
         listItem.textContent = abilityBonus[i].name + ': ' + abilityBonus[i].value;
         abilityBonusList.appendChild(listItem);
     }
-    var speedP = document.createElement('p');
-    var languagesP = document.createElement('p');
-    var featuresP = document.createElement('p');
-
+    
     speedP.textContent = 'Speed: ' + jsonObj['speed'];
+
     var languages = jsonObj['languages'];
     var languageList = document.createElement('ul');
     for (var i = 0; i < languages.length; i++){
@@ -46,10 +51,14 @@ function showFeatures(jsonObj) {
         featuresList.appendChild(listItem);
     }
 
+    abilityBonusP.textContent = "Ability Bonuses: "
+    languagesP.textContent = "Languages: ";
+    featuresP.textContent = "Features: ";
+    abilityBonusP.appendChild(abilityBonusList);
     languagesP.appendChild(languageList);
     featuresP.appendChild(featuresList);
 
-    section.appendChild(abilityBonusList);
+    section.appendChild(abilityBonusP);
     section.appendChild(speedP);    
     section.appendChild(languagesP);
     section.appendChild(featuresP);
