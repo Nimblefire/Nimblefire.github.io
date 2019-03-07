@@ -1,7 +1,4 @@
 function getRequest() {
-
-    var header = document.querySelector('header');
-    var section = document.querySelector('section');
     var requestURL = 'https://https://nimblefire.github.io/Shardmind.json';
     var request = new XMLHttpRequest();
     request.open('GET', requestURL);
