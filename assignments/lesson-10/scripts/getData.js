@@ -41,7 +41,7 @@ function populateForecast(jsonObj){
             var imgDiv = document.createElement('div');
             var img = document.createElement('img');
 
-            img.src = 'http://openweathermap.org/img/w/' + jsonObj.list[i].weather[0].icon + '.png';
+            img.src = 'https://openweathermap.org/img/w/' + jsonObj.list[i].weather[0].icon + '.png';
             img.alt = jsonObj.list[i].weather[0].main;
             imgDiv.classList.add('forecast-image', 'img'+i);
 
