@@ -4,7 +4,11 @@
 }
 
 body {
-    background-color: #fff;
+    background: #ffffff;
+    background: -moz-linear-gradient(top, #ffffff 0%, #c1e9ff 100%);
+    background: -webkit-linear-gradient(top, #ffffff 0%,#c1e9ff 100%);
+    background: linear-gradient(to bottom, #ffffff 0%,#c1e9ff 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#c1e9ff',GradientType=0 );
     text-align: center;
 }
 
@@ -99,14 +103,40 @@ main {
 }
 
 .city-wrapper {
+    width: 60%;
+    margin: 1% auto 5% auto;
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.container {
+    width: 25%;
+    height: auto;
+    border: 2px solid black;
+    margin: 2%;
+    background-color: rgb(46, 46, 46);
 }
 
 .town {
-    padding: 5% solid gray;
-    border: 2px solid black;
+    margin: auto;
+    padding-top: 1%;
+    width: 90%;
+    height: 90%;
     background-color: whitesmoke;
+}
+
+.town h3 {
+    color: orange;
+}
+
+.town img {
+    width: 100%;
+    height: auto;
+}
+
+.city-motto {
+    font-style: italic;
 }
 
 .five-day-forecast, .article-div, .herodiv {

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
+    <meta name="description" content="Weather page for Preston">
+    <link rel="shortcut icon" type="image/x-icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../css/normalize.css">
+    <link rel="stylesheet" href="css/small-10.css" media="(max-width: 399px)">
+    <link rel="stylesheet" href="css/medium-10.css" media="(min-width: 400px) and (max-width: 799px)">
+    <link rel="stylesheet" href="css/large-10.css" media="(min-width: 800px)">
+    <link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display+SC" rel="stylesheet">
+    <script src="scripts/currentdate.js"></script>
+    <script src="scripts/windchill.js"></script>
+    <script src="scripts/towns-data.js"></script>
+    <title>HelloWeather | Home</title>
+</head>
+<body>
+    <header>
+        <section class="headings">
+            <div class="flexitem"><img src="http://weather.theage.com.au/styles/icons/theage/large/mostly_sunny.png?1480640736" alt="Website logo"></div>
+            <div class="flexitem">
+                <h1>Hello Weather!</h1>
+                <div class="motto"><em>Are you going out? We will tell you how it's going to be!</em></div>
+            </div>
+        </section>
+        <nav>
+            <button onclick="toggleMenu()" class="menu">&equiv;</button>
+            <ul id="navigationTab" class="hide">
+                <li class="current-page"><a href="#">Home</a></li>
+                <li><a href="preston-10.html">Preston</a></li>
+                <li><a href="../../work-in-progress.html">Soda Springs</a></li>
+                <li><a href="../../work-in-progress.html">Fish Haven</a></li>
+                <li><a href="stormcenter.html">Storm Center</a></li>
+                <li><a href="gallery-10.html">Gallery</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="city-wrapper">
+
+        </section>
+        <script>
+            var section = document.querySelector('.city-wrapper');
+            getRequest();
+        </script>
+    </main>
+    <footer>
+            <section class="contact-info">
+                <h4>Contact information</h4>
+                <p>
+                    <strong>HelloWeather</strong> <br> 30 N 1st E <br>
+                    Preston, ID 83263
+                </p>
+                <p>
+                    <img src="image/old_phone.png" alt="Phone number">999.999.9999 <br>
+                    <img src="image/mail.png" alt="E-mail">info@helloweather.info
+                </p>
+                <img class="map" src="image/map.png" alt="Map of Idaho">
+            </section>
+            
+            <p>&copy; 2019 I do not own the images on this webpage - Stefano Da Ponte - 
+                <a href="../../work-in-progress.html">Terms of Use</a> <br>
+                <span id="datetime"></span>
+            </p>
+    </footer>
+    <script>
+        printCurrentDate();
+        
+    </script>
+</body>
+</html>
