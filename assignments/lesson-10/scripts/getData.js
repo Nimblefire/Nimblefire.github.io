@@ -35,11 +35,26 @@ function daysTemperatures() {
 function populateForecast(jsonObj){
     var wrapper = document.querySelector('.wrapper');
     var forecast_wrapper = document.querySelector('.forecast-wrapper');
+    var weekday = new Array(7);
+    weekday[0] = "Sun";
+    weekday[1] = "Mon";
+    weekday[2] = "Tue";
+    weekday[3] = "Wed";
+    weekday[4] = "Thu";
+    weekday[5] = "Fri";
+    weekday[6] = "Sat";
 
     for (var i=0; i < jsonObj.list.length; i++) {
         if (jsonObj.list[i].dt_txt.includes('18:00:00')){
+            var dayDiv = document.createElement('div');
+            var date = new Date(jsonObj.list[i].dt_txt);
+            var currentWeekday = weekday[date.getDay()];
+
             var imgDiv = document.createElement('div');
             var img = document.createElement('img');
+
+            dayDiv.textContent = currentWeekday;
+            dayDiv.classList.add('days', 'day' + i);
 
             img.src = 'https://openweathermap.org/img/w/' + jsonObj.list[i].weather[0].icon + '.png';
             img.alt = jsonObj.list[i].weather[0].main;
@@ -47,6 +62,7 @@ function populateForecast(jsonObj){
 
             imgDiv.appendChild(img);
             forecast_wrapper.appendChild(imgDiv);
+            wrapper.appendChild(dayDiv);
         }
     }
 
