@@ -1,4 +1,3 @@
-
 function printCurrentDate() {
     var n =  new Date();
     var y = n.getFullYear();
