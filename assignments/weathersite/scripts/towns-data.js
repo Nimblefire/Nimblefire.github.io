@@ -1,5 +1,5 @@
 function getRequest() {
-    var requestURL = 'https://Nimblefire.github.io/assignments/lesson-9/json/towns-data.json';
+    var requestURL = 'https://Nimblefire.github.io/assignments/weathersite/json/towns-data.json';
     var request = new XMLHttpRequest();
     request.open('GET', requestURL);
     request.responseType = 'json';
