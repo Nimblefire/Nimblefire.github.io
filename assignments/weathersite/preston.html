@@ -52,7 +52,7 @@
                 <p>Humidity: <span id="value4"></span>%</p>
                 <p>Wind Speed: <span id="value5"></span> mph</p>
                 <script>
-                    getRequest();
+                    getRequest('preston');
                 </script>
             </section>
         </div>
@@ -60,10 +60,10 @@
             <h4>5 Day Forecast</h4>
             <div class="wrapper"></div>
             <div class="forecast-wrapper"></div>
-            <script>daysTemperatures();</script>
+            <script>daysTemperatures('preston');</script>
         </section>
         <div class="article-div">
-            <article>
+            <!--<article>
                 <img 
                 src="image/mac-an-cheese-article_70.jpg"
                 alt="Mac n' Cheese" class="articleimg">
@@ -75,8 +75,9 @@
                     
                     This particular macaroni and cheese recipe uses three cheeses, giving it a rich, creamy texture and fantastic flavor. While curly pasta is pictured here, you can easily substitute elbow. With so many tasty possibilities, don’t limit yourself to ... <a href="../../work-in-progress.html">continue reading</a> <br>
                 </p>
-            </article>
+            </article>-->
         </div>
+        <script>getEvents('preston');</script>
     </main>
     <footer>
             <section class="contact-info">

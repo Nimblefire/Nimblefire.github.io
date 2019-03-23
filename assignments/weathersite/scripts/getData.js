@@ -1,5 +1,19 @@
-function getRequest() {
-    var requestURL = 'https://api.openweathermap.org/data/2.5/weather?id=5604473&appid=ef215a532f3986dca09865df45262239';
+function getRequest(city) {
+    var id;
+    switch (city.trim().toLowercase()) {
+        case 'preston':
+            id = 5604473;
+            break;
+        case 'fish haven':
+            id = 5585010;
+            break;
+        case 'soda springs':
+            id = 5607916;
+            break;
+        default:
+            document.write('Error in the code, please contact maintenance')
+    }
+    var requestURL = 'https://api.openweathermap.org/data/2.5/weather?id=' + id + '&appid=ef215a532f3986dca09865df45262239';
     var request = new XMLHttpRequest();
     request.open('GET', requestURL);
     request.responseType = 'json';
@@ -20,8 +34,22 @@ function getRequest() {
     }
 }
 
-function daysTemperatures() {
-    var requestURL = 'https://api.openweathermap.org/data/2.5/forecast?id=5604473&appid=ef215a532f3986dca09865df45262239';
+function daysTemperatures(city) {
+    var id;
+    switch (city.trim().toLowercase()) {
+        case 'preston':
+            id = 5604473;
+            break;
+        case 'fish haven':
+            id = 5585010;
+            break;
+        case 'soda springs':
+            id = 5607916;
+            break;
+        default:
+            document.write('Error in the code, please contact maintenance')
+    }
+    var requestURL = 'https://api.openweathermap.org/data/2.5/forecast?id=' + id + '&appid=ef215a532f3986dca09865df45262239';
     var request = new XMLHttpRequest();
     request.open('GET', requestURL);
     request.responseType = 'json';
@@ -76,4 +104,39 @@ function populateForecast(jsonObj){
             forecast_wrapper.appendChild(temperature);
         }
     }
+}
+
+function getEvents(city){
+    var requestURL = 'https://Nimblefire.github.io/assignments/weathersite/json/towns-data.json';
+    var request = new XMLHttpRequest();
+    request.open('GET', requestURL);
+    request.responseType = 'json';
+    request.send();
+    request.onload = function() {
+        var towns = request.response;
+        populateArticle(towns, city); 
+    }
+}
+
+function populateArticle(jsonObj, city) {
+    var town;
+    for (var i=0; i < jsonObj.towns.length; i++) {
+        if (jsonObj.towns[i].name.trim().toLowerCase() == city.trim().toLowerCase()){
+            town = jsonObj.towns[i];
+        }
+    }
+    var articleDiv = document.querySelector('.article-div');
+    var article = document.createElement('article');
+    var title = document.createElement('h3');
+
+    title.textContent = town.name;
+    article.appendChild(title);
+
+    for (var i=0; i < town.events.length; i++) {
+        var p = document.createElement('p');
+        p.textContent = town.events[i];
+        article.appendChild(p);
+    }
+
+    articleDiv.appendChild(article);
 }
