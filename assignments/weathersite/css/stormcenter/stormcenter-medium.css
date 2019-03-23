@@ -47,7 +47,7 @@ header img  {
     flex-basis: 200px;
 }
 
-div.motto {
+.motto {
     font-family: 'Courgette', cursive;
     margin-top: 0;
     margin-bottom: 1%;
@@ -70,7 +70,7 @@ nav ul {
     flex-direction: column;
 }
 
-nav li.current-page {
+.current-page {
     background: #ff8c00; /* Old browsers */
     background: -moz-linear-gradient(top, #ff8c00 0%, #ffbc03 100%); /* FF3.6-15 */
     background: -webkit-linear-gradient(top, #ff8c00 0%,#ffbc03 100%); /* Chrome10-25,Safari5.1-6 */
@@ -98,7 +98,7 @@ nav a:hover {
     color: #0059ff;
 }
 
-nav button.menu {
+.menu {
     background: transparent;
     border: none;
     margin: 0 auto;
@@ -112,10 +112,29 @@ main {
     margin:0 auto;
 }
 
-h2 {text-align: left;margin-left: 4%;font-size:2rem;text-shadow:3px 3px 5px #777;}
+h2 {text-align: center;margin-left: 4%;font-size:2rem;text-shadow:3px 3px 5px #777;}
 
-.thankyou-message {
-    margin: 10% auto;
+.first-image {
+    display: none;
+    
+}
+
+.second-image {
+    display: none;
+}
+
+form {
+    width: fit-content;
+    height: auto;
+    margin: 2% auto;
+    padding: 2%;
+    border: 1px solid rgb(77, 77, 78);
+    box-shadow: 0 0 30px rgb(77, 77, 78, 0.5);
+}
+
+form table.form-table {
+    border-spacing: 1vw;
+    text-align: left;
 }
 
 .contact-info{

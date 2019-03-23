@@ -47,7 +47,7 @@ header img  {
     flex-basis: 200px;
 }
 
-div.motto {
+.motto {
     font-family: 'Courgette', cursive;
     margin-top: 0;
     margin-bottom: 1%;
@@ -70,7 +70,7 @@ nav ul {
     flex-direction: column;
 }
 
-nav li.current-page {
+.current-page {
     background: #ff8c00; /* Old browsers */
     background: -moz-linear-gradient(top, #ff8c00 0%, #ffbc03 100%); /* FF3.6-15 */
     background: -webkit-linear-gradient(top, #ff8c00 0%,#ffbc03 100%); /* Chrome10-25,Safari5.1-6 */
@@ -83,7 +83,7 @@ nav li a {
     text-decoration: none;
     border-top: 1px solid rgb(0, 0, 0, 0.3);
     display: block;
-    margin:0;
+    margin: 0;
 }
 
 nav li {
@@ -98,7 +98,7 @@ nav a:hover {
     color: #0059ff;
 }
 
-nav button.menu {
+.menu {
     background: transparent;
     border: none;
     margin: 0 auto;
@@ -109,40 +109,66 @@ nav button.menu {
 }
 
 main {
+    max-width:820px;
     margin:0 auto;
 }
 
-h2 {text-align: left;margin-left: 4%;font-size:2rem;text-shadow:3px 3px 5px #777;}
+h2 {text-align: center;font-size:2rem;text-shadow:3px 3px 5px #777;}
 
-.first-image {
-    display: none;
-    
-}
-
-.second-image {
-    display: none;
-}
-
-form {
-    width: fit-content;
+.city-wrapper {
+    width: 80%;
     height: auto;
-    margin: 2% auto;
-    padding: 2%;
-    border: 1px solid rgb(77, 77, 78);
-    box-shadow: 0 0 30px rgb(77, 77, 78, 0.5);
+    margin: 1% auto 5% auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-self: stretch;
+    justify-content: space-around;
 }
 
-form table.form-table {
-    border-spacing: 1vw;
-    text-align: left;
+.container {
+    width: 40%;
+    border: 2px solid black;
+    margin: 2%;
+    background-color: rgb(173, 173, 173);
+}
+
+.town {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    margin: 5% auto 5%;
+    padding-top: 1%;
+    width: 90%;
+    height: 95%;
+    background-color: whitesmoke;
+    box-shadow: 3px 3px 10px rgb(0, 0, 0, 0.8)
+}
+
+.town h3 {
+    color: orange;
+}
+
+.townFigure {
+    margin: 0;
+    width: 100%;
+}
+.townFigure img{
+    margin: -2%;
+    padding: 0;
+    width: 100%;
+    height: auto;
+}
+
+.city-motto {
+    font-style: italic;
 }
 
 .contact-info{
     background-color: #000000;
     color: #fff;
     display: inline-block;
-    text-align: initial;
-    padding: 2%;
+    padding: 1%;
 }
 
 .contact-info p img {
@@ -152,11 +178,10 @@ form table.form-table {
 }
 
 .map{
-    margin-top: -30%;
-    margin-right: 10%;
-    width: 30%;
+    margin: auto;
+    width: 70vw;
     height: auto;
-    float: right;
+    float: inline-end;
 }
 
 footer>p {

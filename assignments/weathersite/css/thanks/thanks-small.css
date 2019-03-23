@@ -113,7 +113,7 @@ main {
     margin:0 auto;
 }
 
-h2 {text-align: left;margin-left: 4%;font-size:2rem;text-shadow:3px 3px 5px #777;}
+h2 {text-align: center;margin-left: 4%;font-size:2rem;text-shadow:3px 3px 5px #777;}
 
 .thankyou-message {
     margin: 10% auto;

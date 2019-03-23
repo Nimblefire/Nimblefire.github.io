@@ -12,6 +12,7 @@ function getRequest() {
 
 function populateBox(jsonObj){
     var towns = jsonObj.towns;
+    var section = document.querySelector('.city-wrapper');
     for (var i=0;i<towns.length;i++){
         var containerDiv = document.createElement('div');
         var div = document.createElement('div');
@@ -20,27 +21,31 @@ function populateBox(jsonObj){
         var yearP = document.createElement('p');
         var populationP = document.createElement('p');
         var rainFall = document.createElement('p');
+        var townFigure = document.createElement('figure');
         var townImg = document.createElement('img');
 
-        cityName.textContent = towns[i].name;
         cityName.classList.add('city-name');
-        cityMotto.textContent = towns[i].motto;
         cityMotto.classList.add('city-motto');
+        townFigure.classList.add('townFigure', 'townImg' + i);
+        div.classList.add('town', 'box' + i);
+        containerDiv.classList.add('container', 'box' + i);
+
+        cityName.textContent = towns[i].name;
+        cityMotto.textContent = towns[i].motto;
         yearP.textContent = (document.createElement('strong').textContent = 'Year Founded: ') + towns[i].yearFounded;
         populationP.textContent = (document.createElement('strong').textContent = 'Population: ') + towns[i].currentPopulation;
         rainFall.textContent = (document.createElement('strong').textContent = 'Annual Rain Fall: ') + towns[i].averageRainfall + '"';
         townImg.src = 'image/' + towns[i].name.toLowerCase().trim() + '.jpg';
 
+        townFigure.appendChild(townImg);
         div.appendChild(cityName);
         div.appendChild(cityMotto);
         div.appendChild(yearP);
         div.appendChild(populationP);
         div.appendChild(rainFall);
-        div.appendChild(townImg);
-        div.classList.add('town', 'box' + i);
-        containerDiv.classList.add('container', 'box' + i);
-        
+        div.appendChild(townFigure);
+
         containerDiv.appendChild(div);
-        section.appendChild(containerDiv);  
-    }
+        section.appendChild(containerDiv);
+    }  
 }
