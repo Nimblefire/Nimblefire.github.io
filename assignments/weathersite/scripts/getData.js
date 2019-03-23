@@ -1,6 +1,6 @@
 function getRequest(city) {
     var id;
-    switch (city.trim().toLowercase()) {
+    switch (city.trim().toLowerCase()) {
         case 'preston':
             id = 5604473;
             break;
@@ -36,7 +36,7 @@ function getRequest(city) {
 
 function daysTemperatures(city) {
     var id;
-    switch (city.trim().toLowercase()) {
+    switch (city.trim().toLowerCase()) {
         case 'preston':
             id = 5604473;
             break;
@@ -107,7 +107,7 @@ function populateForecast(jsonObj){
 }
 
 function getEvents(city){
-    var requestURL = 'https://Nimblefire.github.io/assignments/weathersite/json/towns-data.json';
+    var requestURL = 'https://Nimblefire.github.io/assignments/lesson-9/json/towns-data.json';
     var request = new XMLHttpRequest();
     request.open('GET', requestURL);
     request.responseType = 'json';
@@ -129,7 +129,7 @@ function populateArticle(jsonObj, city) {
     var article = document.createElement('article');
     var title = document.createElement('h3');
 
-    title.textContent = town.name;
+    title.textContent = town.name + ' Events';
     article.appendChild(title);
 
     for (var i=0; i < town.events.length; i++) {
