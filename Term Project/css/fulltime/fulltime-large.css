@@ -97,7 +97,7 @@ main {
 }
 
 h2 {
-    text-shadow: 1px 1px 3px black;
+    text-shadow: 1px 1px 1px black;
 }
 
 .comment {
@@ -120,7 +120,7 @@ h2 {
 }
 
 .suite figure {
-    width: 40%;
+    width: 60%;
     height: auto;
 }
 
