@@ -6,12 +6,11 @@
     <meta name="description" content="Weather page for Preston, Soda Springs, and Fish Haven">
     <link rel="shortcut icon" type="image/x-icon" href="../../favicon.ico">
     <link rel="stylesheet" href="../../css/normalize.css">
-    <link rel="stylesheet" href="css/index/index-small.css" media="(max-width: 599px)">
-    <link rel="stylesheet" href="css/index/index-medium.css" media="(min-width: 600px) and (max-width: 799px)">
-    <link rel="stylesheet" href="css/large.css" media="(min-width: 800px)">
+    <link rel="stylesheet" href="css/fulltime/fulltime-small.css" media="(max-width: 599px)">
+    <link rel="stylesheet" href="css/fulltime/fulltime-medium.css" media="(min-width: 600px) and (max-width: 799px)">
+    <link rel="stylesheet" href="css/fulltime/fulltime-large.css" media="(min-width: 800px)">
     <link href="https://fonts.googleapis.com/css?family=Adamina|Satisfy" rel="stylesheet">
     <script src="scripts/currentdate-mini.js"></script>
-    <script src="scripts/towns-data-mini.js"></script>
     <title>Temple Inn & Suites | Services</title>
 </head>
 <body>
@@ -20,7 +19,6 @@
             <div class="flexitem"><img src="images/logo.png" alt="Website logo"></div>
             <div class="flexitem">
                 <h1>Temple Inn & Suites</h1>
-                <div class="motto"><em>Are you going out? We will tell you how it's going to be!</em></div>
             </div>
         </section>
         <nav>
@@ -35,17 +33,60 @@
         </nav>
     </header>
     <main>
+        <section class="message">
+            <h2>Full-time Missionary Suite</h2>
+            <p>Here listed you will find several suites provided in all of our hotels.</p>
+            <p>Feel free to contact us at any time for further question using the following form.</p>
+            <form action="get">
+                <div class="table-container">
+                    <table class="form-table">
+                        <tr>
+                            <td><label for="fullname">Fullname: </label></td>
+                            <td><input type="text" id="fullname" name="fullname"  pattern="[A-Za-z]{5,}" placeholder="John Smith" required></td>
+                        </tr>
+                        <tr>
+                            <td><label for="email">Email: </label></td>
+                            <td><input type="email" id="email" name="email" placeholder="example@example.com" required></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2"><textarea class="comment" id="comment" name="comment" required>Questions and comments</textarea></td>
+                        </tr>
+                    </table>
+                    <button type="submit">Submit</button>
+                </div>
+            </form>
+        </section>
         <div class="flex-container">
             <!--implemented by javascript-->
-            <div class="suite suite1"></div>
-            <div class="suite suite2"></div>
-            <div class="suite suite3"></div>
-            <div class="suite suite4"></div>
+            <div class="suite suite1">
+                <figure>
+                    <img src="images/suites/Bath2_800.jpg" alt="">
+                </figure>
+                <p>Our hotels have great bathrooms made from....</p>
+            </div>
+            <div class="suite suite2">
+                <figure>
+                    <img src="images/suites/bed3-800.jpg" alt="">
+                </figure>
+                <p>Our hotels have great bathrooms made from....</p>
+            </div>
+            <div class="suite suite3">
+                <figure>
+                    <img src="images/suites/kitchen2-800.jpg" alt="">
+                </figure>
+                <p>Our hotels have great bathrooms made from....</p>
+            </div>
+            <div class="suite suite4">
+                <figure>
+                    <img src="images/suites/livingroom1-800.jpg" alt="">
+                </figure>
+                <p>Our hotels have great bathrooms made from....</p>
+            </div>
         </div>
     </main>
     <footer>
         <p>&copy; 2019 I do not own the images on this webpage - Stefano Da Ponte - 
-            <a href="../../work-in-progress.html">Terms of Use</a> <br>
+            <a href="../work-in-progress.html">Terms of Use</a> <br>
             <a href="resources.html">Resources</a>
             <span id="datetime"></span>
         </p>
