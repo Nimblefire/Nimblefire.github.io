@@ -2,11 +2,6 @@
     padding: 0;
     font-family: 'Times New Roman', Times, serif;
 }
-
-.hide {
-    display: none;
-}
-
 header {
 	margin: 10px auto;
     background-color:#FAF0E6;
@@ -52,10 +47,11 @@ nav {
 
 nav ul {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: space-around;
 }
 
-.current-page {
+nav li.current-page {
     background: #D3D3D3;
 }
 
@@ -64,7 +60,7 @@ nav li a {
     text-decoration: none;
     border-top: 1px solid rgb(0, 0, 0, 0.3);
     display: block;
-    margin: 0;
+    margin:0;
 }
 
 .current-page a {
@@ -85,87 +81,41 @@ nav a:hover {
 
 .menu {
     background: transparent;
-    color: #fff;
     border: none;
     margin: 0 auto;
     padding:0;
     font-size: 1.6rem;
-    display: block;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: none;
+    font-family: 'Adamina', serif;
 }
 
 /*Main*/
-.grid-container {
-    margin: 1% auto;
-    width: 90%;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    align-content: stretch;
-}
-
-.call-to-action {
-    background: lightgoldenrodyellow;
-    padding: 0;
-    box-shadow: 5px 5px 10px rgb(0, 0, 0, 0.8);
+main {
+    margin: auto;
     text-align: center;
-    position: relative;
-    width: 100%;
-    height: fit-content;
 }
 
-.call-to-action figure, .call-to-action img {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: auto;
+.contacts{
+    margin: 3%;
 }
 
-.call-to-action h2 {
-    font-size: 3em;
-    display: inline-block;
-    text-shadow: 2px 2px 4px black;
-    position: relative;
-    top: -85%;
+h2 {
+    text-shadow: 1px 1px 3px black;
 }
 
-.contact-information {
-    text-align: center;
-    position: relative;
-    margin-top: 4%;
-}
-
-.contact-information section {
-    background: lightblue;
-    padding: 6%;
-}
-
-.month-temple {
-    position: relative;
-    margin-top: 4%;
-}
-
-.month-temple p {
-    margin: 0;
-    display: block;
-    background: orange;
-    padding: 2%;
-}
-
-.month-temple ul, .month-temple h2 {
-    margin: 0;
-    padding-left: 5%;
+.contacts li {
     list-style: none;
-    background: rgb(0, 0, 0, 0);
+    margin: 5px;
 }
 
-.month-temple li {
-    margin: 2px;
+iframe {
+    width: 50%;
+    height: 50%;
 }
 
 /*Footer*/
 footer {
-    margin-top: 3%; 
+    margin-top: 5%; 
     width: 100%;
     background-color: #000000;
     color: #fff;
