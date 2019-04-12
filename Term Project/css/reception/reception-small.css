@@ -23,7 +23,8 @@ header h1 {
 
 header img  {
     margin: 0;
-    width: 100%;
+    margin-top: 5%;
+    width: 50%;
     height: auto;
 }
 
@@ -95,72 +96,47 @@ nav a:hover {
 }
 
 /*Main*/
-.grid-container {
-    margin: 1% auto;
-    width: 90%;
+.receptions figure {
+    width: 60%;
     height: auto;
-    display: flex;
-    flex-direction: column;
-    align-content: stretch;
+    margin: 7% auto 0 auto;
 }
 
-.call-to-action {
-    background: lightgoldenrodyellow;
-    padding: 0;
-    box-shadow: 5px 5px 10px rgb(0, 0, 0, 0.8);
-    text-align: center;
-    position: relative;
+.receptions figure {
+    width: 80%;
+    height: auto;
+    margin: 7% auto 0 auto;
+}
+
+.receptions img {
     width: 100%;
+    height: auto;
+}
+
+main {
     height: fit-content;
+    display: flex;
+    flex-direction: column-reverse;
 }
 
-.call-to-action figure, .call-to-action img {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: auto;
-}
-
-.call-to-action h2 {
-    font-size: 3em;
-    display: inline-block;
-    text-shadow: 2px 2px 4px black;
-    position: relative;
-    top: -85%;
-}
-
-.contact-information {
+.reception-accommodation {
+    width: 80%;
     text-align: center;
-    position: relative;
-    margin-top: 4%;
+    margin: auto;
 }
 
-.contact-information section {
-    background: lightblue;
-    padding: 6%;
-}
-
-.month-temple {
-    position: relative;
-    margin-top: 4%;
-}
-
-.month-temple p {
-    margin: 0;
-    display: block;
-    background: orange;
-    padding: 2%;
-}
-
-.month-temple ul, .month-temple h2 {
-    margin: 0;
-    padding-left: 5%;
+.reception-accommodation li {
     list-style: none;
-    background: rgb(0, 0, 0, 0);
+    text-align: left;
+    font-size: 1.3rem;
 }
 
-.month-temple li {
-    margin: 2px;
+.reception-accommodation a {
+    text-decoration: none;
+}
+
+.reception-accommodation h4 {
+    margin-bottom: 0;
 }
 
 /*Footer*/

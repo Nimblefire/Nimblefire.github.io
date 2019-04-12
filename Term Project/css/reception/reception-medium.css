@@ -18,7 +18,8 @@ header h1 {
 
 header img  {
     margin: 0;
-    width: 100%;
+    margin-top: 5%;
+    width: 50%;
     height: auto;
 }
 
@@ -88,82 +89,44 @@ nav a:hover {
     display: none;
     font-family: 'Adamina', serif;
 }
-
 /*Main*/
-main {
-    margin:0 auto;
-}
-
-.grid-container {
-    margin: 1% auto;
-    width: 80%;
-    height: 100%;
-    display: grid;
-    grid-template: 30.55vw 1fr /4fr 1fr 1fr 1fr;
-    grid-gap: 7%;
-    position: relative;
-}
-
-.call-to-action {
-    box-shadow: 5px 5px 10px rgb(0, 0, 0, 0.8);
-    grid-row-start: 1;
-    grid-row-end: 2;
-    grid-column-start: 1;
-    grid-column-end: 3;
-    text-align: center;
-    position: relative;
-    width: fit-content;
+.receptions figure {
+    width: 60%;
     height: auto;
+    margin: 7% auto 0 auto;
 }
 
-.call-to-action figure, .call-to-action img {
-    margin: 0;
+.receptions figure {
+    width: 80%;
+    height: auto;
+    margin: 7% auto 0 auto;
+}
+
+.receptions img {
     width: 100%;
     height: auto;
 }
 
-.call-to-action h2 {
-    font-size: 3em;
-    display: block;
-    text-shadow: 2px 3px 4px black;
-    position: relative;
-    top: -75%;
+main {
+    height: fit-content;
+    display: flex;
+    flex-direction: column-reverse;
 }
 
-.contact-information {
-    grid-row-start: 2;
-    grid-row-end: 3;
-    grid-column-start: 1;
-    grid-column-end: 3;
+.reception-accommodation {
+    width: 80%;
     text-align: center;
-    position: relative;
+    margin: auto;
 }
 
-.contact-information section {
-    background: lightblue;
-    padding: 6%;
-}
-
-.month-temple {
-    grid-row-start: 1;
-    grid-row-end: 3;
-    grid-column-start: 3;
-    grid-column-end: 5;
-    position: relative;
-}
-
-.month-temple p {
-    margin: 0;
-    display: block;
-    background: orange;
-    padding: 2%;
-}
-
-.month-temple ul, .month-temple h2 {
-    margin: 0;
-    padding-left: 5%;
+.reception-accommodation li {
     list-style: none;
-    background: rgb(0, 0, 0, 0);
+    text-align: left;
+    font-size: 1.3rem;
+}
+
+.reception-accommodation h4 {
+    margin-bottom: 0;
 }
 
 /*Footer*/
