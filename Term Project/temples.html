@@ -4,23 +4,22 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
     <meta name="description" content="Weather page for Preston, Soda Springs, and Fish Haven">
-    <link rel="shortcut icon" type="image/x-icon" href="../../favicon.ico">
-    <link rel="stylesheet" href="../../css/normalize.css">
-    <link rel="stylesheet" href="css/index/index-small.css" media="(max-width: 599px)">
-    <link rel="stylesheet" href="css/index/index-medium.css" media="(min-width: 600px) and (max-width: 799px)">
-    <link rel="stylesheet" href="css/large.css" media="(min-width: 800px)">
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="css/temples/temples-small.css" media="(max-width: 599px)">
+    <link rel="stylesheet" href="css/temples/temples-medium.css" media="(min-width: 600px) and (max-width: 799px)">
+    <link rel="stylesheet" href="css/temples/temples-large.css" media="(min-width: 769px)">
     <link href="https://fonts.googleapis.com/css?family=Adamina|Satisfy" rel="stylesheet">
     <script src="scripts/currentdate-mini.js"></script>
-    <script src="scripts/towns-data-mini.js"></script>
+    <script src="scripts/temple-data.js"></script>
     <title>Temple Inn & Suites | Services</title>
 </head>
 <body>
     <header>
         <section class="headings">
-            <div class="flexitem"><img src="images/logo.png" alt="Website logo"></div>
+            <div class="flexitem"><img src="images/rome_italy.jpeg" alt="Website logo"></div>
             <div class="flexitem">
                 <h1>Temple Inn & Suites</h1>
-                <div class="motto"><em>Are you going out? We will tell you how it's going to be!</em></div>
             </div>
         </section>
         <nav>
@@ -36,19 +35,8 @@
     </header>
     <main>
         <div class="flex-container">
-            <!--implemented by javascript-->
-            <div class="temple temple1">
-            </div>
-
-            <div class="temple temple2">
-            </div>
-
-            <div class="temple temple3">
-            </div>
-
-            <div class="temple temple4">
-            </div>
         </div>
+        <script>getRequest();</script>
     </main>
     <footer>
         <p>&copy; 2019 I do not own the images on this webpage - Stefano Da Ponte - 
@@ -59,7 +47,6 @@
     </footer>
     <script>
         printCurrentDate();
-        
     </script>
 </body>
 </html>

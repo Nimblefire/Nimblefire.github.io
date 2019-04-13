@@ -28,7 +28,8 @@ header h1 {
 
 header img  {
     margin: 0;
-    width: 100%;
+    margin-top: 5%;
+    width: 50%;
     height: auto;
 }
 
