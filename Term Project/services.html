@@ -4,23 +4,21 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
     <meta name="description" content="Weather page for Preston, Soda Springs, and Fish Haven">
-    <link rel="shortcut icon" type="image/x-icon" href="../../favicon.ico">
-    <link rel="stylesheet" href="../../css/normalize.css">
-    <link rel="stylesheet" href="css/index/index-small.css" media="(max-width: 599px)">
-    <link rel="stylesheet" href="css/index/index-medium.css" media="(min-width: 600px) and (max-width: 799px)">
-    <link rel="stylesheet" href="css/large.css" media="(min-width: 800px)">
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="css/services/services-small.css" media="(max-width: 426px)">
+    <link rel="stylesheet" href="css/services/services-medium.css" media="(min-width: 600px) and (max-width: 768px)">
+    <link rel="stylesheet" href="css/services/services-large.css" media="(min-width: 769px)">
     <link href="https://fonts.googleapis.com/css?family=Adamina|Satisfy" rel="stylesheet">
     <script src="scripts/currentdate-mini.js"></script>
-    <script src="scripts/towns-data-mini.js"></script>
     <title>Temple Inn & Suites | Services</title>
 </head>
 <body>
     <header>
         <section class="headings">
-            <div class="flexitem"><img src="images/logo.png" alt="Website logo"></div>
+            <div class="flexitem"><img src="images/rome_italy.jpeg" alt="Website logo"></div>
             <div class="flexitem">
                 <h1>Temple Inn & Suites</h1>
-                <div class="motto"><em>Are you going out? We will tell you how it's going to be!</em></div>
             </div>
         </section>
         <nav>
@@ -36,38 +34,57 @@
     </header>
     <main>
         <section class="services">
-
+            <h2>Our Services to You</h2>
+            <p>
+                <img src="images/53524.png" alt="Symbol Wifi">
+                Our facilities offer several services. Among others we have:
+                <ul>
+                    <li>Free access to changing rooms and bathroom facilities for temple patrons who have traveled far and need to change to and from church clothes</li>
+                    <li>A playroom and low-cost, short-term babysitting services for the children of patrons</li>
+                    <li>Long-term stay accommodations in kitchenette suites for full-time temple missionaries</li>
+                    <li>Temple history themed reception and sitting area</li>
+                    <li>A wedding reception hall that can be easily customized with a simple catering menu and kitchen access for food preparation and serving</li>
+                    <li>A family search center that supports family search and ordinance work</li>
+                </ul>
+            </p>
+            <p>
+                We also offer these Free Amenities to our patrons
+                <ul>
+                    <li>Breakfast</li>
+                    <li>Exercise/workout room</li>
+                    <li>Indoor pool</li>
+                    <li>WiFi high-speed internet access and smart TVs</li>
+                    <li>Parking</li>
+                    <li>Temple shuttle</li>
+                    <li>Family history consultation and family ordinance card service</li>
+                </ul>
+            </p>
         </section>
         <div class="flex-container">
-            <div class="reception">
-            </div>
+            <figure class="reception">
+                <a href="reception.html">
+                    <img src="images/reception/reception2-800.jpg" alt="Reception information link">
+                </a>
+                <p>Receptions</p>
+            </figure>
 
-            <div class="missionary-portal">
-            </div>
+            <figure class="missionary-portal">
+                <a href="fulltime.html">
+                    <img src="images/temples/idaho-falls-temple-large.jpg" sizes="1024px" alt="Temple missionary link" srcset="images/temples/idaho-falls-temple-small.jpg 425w,
+                    images/temples/idaho-falls-temple-medium.jpg 768w">
+                </a>
+                <p>Full-Time Missionaries</p>
+            </figure>
         </div>
     </main>
     <footer>
-            <section class="contact-info">
-                <h4>Contact information</h4>
-                <p>
-                    <strong>Temple Inn & Suites</strong> <br> 30 N 1st E <br>
-                    Preston, ID 83263
-                </p>
-                <p>
-                    <img src="image/old_phone.png" alt="Phone number">999.999.9999 <br>
-                    <img src="image/mail.png" alt="E-mail">info@helloweather.info
-                </p>
-                <img class="map" src="image/map.png" alt="Map of Idaho">
-            </section>
-            
             <p>&copy; 2019 I do not own the images on this webpage - Stefano Da Ponte - 
-                <a href="../../work-in-progress.html">Terms of Use</a> <br>
+                <a href="../work-in-progress.html">Terms of Use</a> <br>
                 <span id="datetime"></span>
             </p>
     </footer>
     <script>
         printCurrentDate();
-        
     </script>
 </body>
 </html>
