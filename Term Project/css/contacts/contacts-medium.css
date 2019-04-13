@@ -110,6 +110,7 @@ h2 {
 }
 
 iframe {
+    border: none;
     width: 50%;
     height: 50%;
 }
