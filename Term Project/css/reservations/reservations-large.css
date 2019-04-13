@@ -1,0 +1,167 @@
+/*Header*/
+header {
+	margin: 10px auto;
+    background-color:#FAF0E6;
+	border: 1px solid rgb(0, 56, 177);
+	box-shadow: 0 0 30px #777;
+	text-align: center;
+}
+
+header h1 {
+    margin-bottom: 0;
+    font-size: 200%;
+    font-family: 'Playfair Display SC', serif;
+}
+
+header img  {
+    margin: 0;
+    margin-top: 5%;
+    width: 50%;
+    height: auto;
+}
+
+.flexitem {
+    flex-basis: 200px;
+}
+
+.headings {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Navigation Tab*/
+nav {
+    background: #552500;
+    background: -moz-linear-gradient(top, #552500 0%, #542c0e 20%, #442200 35%, #3a1b00 48%, #442200 69%, #3a1b00 80%, #442200 88%, #592c00 100%);
+    background: -webkit-linear-gradient(top, #552500 0%,#542c0e 20%,#442200 35%,#3a1b00 48%,#442200 69%,#3a1b00 80%,#442200 88%,#592c00 100%);
+    background: linear-gradient(to bottom, #552500 0%,#542c0e 20%,#442200 35%,#3a1b00 48%,#442200 69%,#3a1b00 80%,#442200 88%,#592c00 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#552500', endColorstr='#592c00',GradientType=0 );
+    margin: 10px;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+nav #navigationTab {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+}
+
+nav li a {
+    color: #ffff;
+    text-decoration: none;
+    display: block;
+    margin:0;
+}
+
+.current-page {
+    background: #D3D3D3;
+}
+
+.current-page a {
+    color: #191970;
+}
+
+nav a:hover {
+    color: #0059ff;
+}
+
+nav li {
+    font-size: 150%;
+    display: inline-block;
+    padding: 1vw;
+    margin: 0;
+    list-style-type: none;
+    font-family: 'Adamina', serif;
+}
+
+.menu {
+    display: none;
+}
+
+/*Main*/
+main {
+    height: fit-content;
+}
+
+.temple-figure {
+    margin: 0;
+    width: 100%;
+    height: auto;
+}
+
+.temple-figure img {
+    width: 100%;
+    height: auto;
+}
+
+.main-container {
+    width: 70%;
+    height: 43vw;
+    margin: auto;
+    text-align: center;
+    position: relative;
+}
+.flex-container {
+    background: rgba(250, 240, 230, 0.3);
+    width: 60%;
+    height: 30vw;
+    margin: 1% 15% 20% 15%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: left;
+    position: absolute;
+    top: 10%;
+}
+
+.form {
+    width: 100%;
+    margin-bottom: 2%;
+}
+
+.location-date, .rooms, .other-info{
+    display: flex;
+    margin: auto;
+    margin-left: 2%; 
+}
+
+.date {
+    margin-left: 5%;
+}
+.type {
+    margin-left: 10%;
+}
+
+.registrant-info {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.comment {
+    margin-top: 2%;
+    margin-left: 5%;
+    width: 70%;
+    height: 10vw;
+}
+
+button {
+    width: 10%;
+}
+
+/*Footer*/
+footer {
+    margin-top: 3%; 
+    width: 100%;
+    background-color: #000000;
+    color: #fff;
+    display: inline-block;
+    text-align: center;
+}
+
+footer p {
+    width: 100%;
+    font-size: 0.8rem;
+}
