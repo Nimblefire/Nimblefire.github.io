@@ -146,6 +146,10 @@ footer {
     text-align: center;
 }
 
+footer a {
+    color: white;
+}
+
 footer p {
     width: 100%;
     font-size: 0.8rem;
