@@ -1,14 +1,14 @@
 function getRequest(city) {
     var id;
     switch (city.trim().toLowerCase()) {
-        case 'preston':
-            id = 5604473;
+        case 'lecco':
+            id = 6541997;
             break;
-        case 'fish haven':
-            id = 5585010;
+        case 'como':
+            id = 6542055;
             break;
-        case 'soda springs':
-            id = 5607916;
+        case 'milano':
+            id = 6542283;
             break;
         default:
             document.write('Error in the code, please contact maintenance')
@@ -25,26 +25,26 @@ function getRequest(city) {
         var windchill = document.querySelector('#value3');
         var humidity = document.querySelector('#value4');
         var windspeed = document.querySelector('#value5');
-        var temperatureF = Math.round((weatherjson.main.temp_max-273.15)*9/5 + 32);
+        var temperature = Math.round(weatherjson.main.temp_max-273.15);
         currently.textContent = weatherjson.weather[0].main;
-        high.textContent = temperatureF;
+        high.textContent = temperature;
         humidity.textContent = weatherjson.main.humidity;
         windspeed.textContent = weatherjson.wind.speed;
-        windchill.textContent = Math.round(35.74 + 0.6215*temperatureF - 35.75*Math.pow(weatherjson.wind.speed, 0.16) + 0.4275*temperatureF*Math.pow(weatherjson.wind.speed, 0.16));
+        windchill.textContent = Math.round(35.74 + 0.6215*temperature - 35.75*Math.pow(weatherjson.wind.speed, 0.16) + 0.4275*temperature*Math.pow(weatherjson.wind.speed, 0.16));
     }
 }
 
 function daysTemperatures(city) {
     var id;
     switch (city.trim().toLowerCase()) {
-        case 'preston':
-            id = 5604473;
+        case 'lecco':
+            id = 6541997;
             break;
-        case 'fish haven':
-            id = 5585010;
+        case 'como':
+            id = 6542055;
             break;
-        case 'soda springs':
-            id = 5607916;
+        case 'milano':
+            id = 6542283;
             break;
         default:
             document.write('Error in the code, please contact maintenance')
@@ -98,7 +98,7 @@ function populateForecast(jsonObj){
         if (jsonObj.list[i].dt_txt.includes('18:00:00')){
             var temperature = document.createElement('div');
 
-            temperature.textContent = Math.round((jsonObj.list[i].main.temp - 273.15)*9/5 + 32) + '°F';
+            temperature.textContent = Math.round((jsonObj.list[i].main.temp - 273.15)) + '°C';
             temperature.classList.add('temp', 'temperature'+i)
 
             forecast_wrapper.appendChild(temperature);
@@ -107,7 +107,7 @@ function populateForecast(jsonObj){
 }
 
 function getEvents(city){
-    var requestURL = 'https://Nimblefire.github.io/assignments/weathersite/json/towns-data.json';
+    var requestURL = 'https://Nimblefire.github.io/arbi/json/towns-data.json';
     var request = new XMLHttpRequest();
     request.open('GET', requestURL);
     request.responseType = 'json';

@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
-    <meta name="description" content="Weather page for Preston">
+    <meta name="description" content="Weather page for lecco">
     <link rel="shortcut icon" type="image/x-icon" href="../../favicon.ico">
     <link rel="stylesheet" href="../../css/normalize.css">
     <link rel="stylesheet" href="css/citiespage/small-mini.css" media="(max-width: 399px)">
@@ -12,9 +12,9 @@
     <link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display+SC" rel="stylesheet">
     <script src="scripts/currentdate-mini.js"></script>
-    <script src="scripts/getData-mini.js"></script>
-    <script>var city = 'Preston';</script>
-    <title>HelloWeather | Preston</title>
+    <script src="scripts/getData.js"></script>
+    <script>var city = 'lecco';</script>
+    <title>HelloWeather | Lecco</title>
 </head>
 <body>
     <header>
@@ -29,16 +29,15 @@
             <button onclick="toggleMenu()" class="menu">&equiv;</button>
             <ul id="navigationTab" class="hide">
                 <li><a href="index.html">Home</a></li>
-                <li class="current-page"><a href="#">Preston</a></li>
-                <li><a href="soda-springs.html">Soda Springs</a></li>
-                <li><a href="fish-haven.html">Fish Haven</a></li>
-                <li><a href="stormcenter.html">Storm Center</a></li>
+                <li class="current-page"><a href="#">Lecco</a></li>
+                <li><a href="milano.html">Milan</a></li>
+                <li><a href="como.html">Como</a></li>
                 <li><a href="gallery.html">Gallery</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <h2>Preston, Idaho</h2>
+        <h2>Lecco, Italy</h2>
         <div class="herodiv">
             <img 
             src="image/cit230_image_franklinOriginal.jpeg" sizes="100vw" 
@@ -48,10 +47,10 @@
             <section class="stats">
                 <h3>Weather Summary</h3>
                 <p>Currently: <span id="value1"></span></p>
-                <p>High: <span id="value2"></span>°F</p>
-                <p>Wind Chill: <span id="value3"></span>°F</p>
+                <p>High: <span id="value2"></span>°C</p>
+                <p>Wind Chill: <span id="value3"></span>°C</p>
                 <p>Humidity: <span id="value4"></span>%</p>
-                <p>Wind Speed: <span id="value5"></span> mph</p>
+                <p>Wind Speed: <span id="value5"></span> m/s</p>
                 <script>
                     getRequest(city);
                 </script>
@@ -67,20 +66,20 @@
         <script>getEvents(city);</script>
     </main>
     <footer>
-            <section class="contact-info">
-                <h4>Contact information</h4>
-                <p>
-                    <strong>HelloWeather</strong> <br> 30 N 1st E <br>
-                    Preston, ID 83263
-                </p>
-                <p>
-                    <img src="image/old_phone.png" alt="Phone number">999.999.9999 <br>
-                    <img src="image/mail.png" alt="E-mail">info@helloweather.info
-                </p>
-                <img class="map" src="image/map.png" alt="Map of Idaho">
-            </section>
+        <section class="contact-info">
+            <h4>Contact information</h4>
+            <p>
+                <strong>HelloWeather</strong> <br> Via Alessandro Manzoni <br>
+                Como, Italia
+            </p>
+            <p>
+                <img src="image/old_phone.png" alt="Phone number">123456789 <br>
+                <img src="image/mail.png" alt="E-mail">info@helloweather.info
+            </p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2780.904124737909!2d9.082752315442718!3d45.81317847910659!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47869db60be97e6b%3A0x92ea36bd0917dcd5!2sVia+Alessandro+Manzoni%2C+22100+Como+CO!5e0!3m2!1sen!2sit!4v1562573874686!5m2!1sen!2sit" width="300" height="225" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </section>
             
-            <p>&copy; 2019 I do not own the images on this webpage - Weather data from OpenWeatherMap - Stefano Da Ponte - 
+        <p>&copy; 2019 I do not own the images on this webpage - Weather data from OpenWeatherMap - Arbi Nanogjoka - 
                 <a href="../../work-in-progress.html">Terms of Use</a> <br>
                 <span id="datetime"></span>
             </p>
