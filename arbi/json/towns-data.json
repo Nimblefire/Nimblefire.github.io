@@ -2,10 +2,10 @@
   "towns" : [
   {
     "name": "Como",
-    "motto": "Where you will grow!",
-    "yearFounded": 1788,
-    "currentPopulation": 30458,
-    "averageRainfall": 21,
+    "mainFeature": "Como Cathedral",
+    "famousPeople": "Alessandro Volta",
+    "currentPopulation": 83320,
+    "averageRainfall": 1.072,
     "events" : [
       "March 4: March to the Drum of Donuts",
       "September 5 - 11: Founder Days",
@@ -14,10 +14,10 @@
   },
   {
     "name": "Lecco",
-    "motto": "This is Fish Heaven.",
-    "yearFounded": 1864,
-    "currentPopulation": 501,
-    "averageRainfall": 14.20,
+    "mainFeature": "Minor Basilica of San Nicolò",
+    "famousPeople": "Alessandro Manzoni",
+    "currentPopulation": 48177,
+    "averageRainfall": 1.118,
     "events" : [
       "April 1: How Big Was That Fish Day",
       "May 15-30: Rush the Creek Days",
@@ -27,10 +27,10 @@
   },
   {
     "name": "Milano",
-    "motto": "Green is our way of life.",
-    "yearFounded": 1805,
-    "currentPopulation": 33458,
-    "averageRainfall": 25,
+    "mainFeature": "Milan Cathedral",
+    "famousPeople": "Several see <a href=https://en.wikipedia.org/wiki/Milan>Milan Wikipedia<a>",
+    "currentPopulation": 1395274,
+    "averageRainfall": 920.1,
     "events" : [
       "February 10-12: Greenbration",
       "May 8 - 18: Greenville Founder Days",

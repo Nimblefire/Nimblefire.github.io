@@ -1,5 +1,5 @@
 function getRequest() {
-    var requestURL = 'https://Nimblefire.github.io/assignments/weathersite/json/towns-data.json';
+    var requestURL = 'https://Nimblefire.github.io/arbi/json/towns-data.json';
     var request = new XMLHttpRequest();
     request.open('GET', requestURL);
     request.responseType = 'json';
@@ -31,11 +31,11 @@ function populateBox(jsonObj){
         containerDiv.classList.add('container', 'box' + i);
 
         cityName.textContent = towns[i].name;
-        cityMotto.textContent = towns[i].motto;
-        yearP.textContent = (document.createElement('strong').textContent = 'Year Founded: ') + towns[i].yearFounded;
+        cityMotto.textContent = (document.createElement('strong').textContent = 'Main Feature: ') + towns[i].mainFeature;
+        yearP.textContent = (document.createElement('strong').textContent = 'Notable People: ') + towns[i].famousPeople;
         populationP.textContent = (document.createElement('strong').textContent = 'Population: ') + towns[i].currentPopulation;
-        rainFall.textContent = (document.createElement('strong').textContent = 'Annual Rain Fall: ') + towns[i].averageRainfall + '"';
-        townImg.src = 'image/' + towns[i].name.toLowerCase().trim() + '.jpg';
+        rainFall.textContent = (document.createElement('strong').textContent = 'Annual Rain Fall: ') + towns[i].averageRainfall + " mm";
+        townImg.src = 'image/' + towns[i].name.toLowerCase().trim() + '.png';
 
         townFigure.appendChild(townImg);
         div.appendChild(cityName);
