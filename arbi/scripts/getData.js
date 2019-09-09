@@ -135,7 +135,7 @@ function populateArticle(jsonObj, city) {
     var article = document.createElement('article');
     var title = document.createElement('h3');
 
-    title.textContent = town.name + ' Events';
+    title.textContent = town.name + ' Activities';
     article.appendChild(title);
 
     for (var i=0; i < town.events.length; i++) {
