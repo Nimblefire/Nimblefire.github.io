@@ -158,6 +158,7 @@ main {
     display: inline-block;
     text-align: initial;
     padding: 1%;
+    display: flex;
 }
 
 .contact-info p img {
