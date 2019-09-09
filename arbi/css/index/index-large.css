@@ -161,6 +161,11 @@ main {
     display: flex;
 }
 
+.fa-facebook {
+    background: #ffffff;
+    color: #0059ff;
+}
+
 .contact-info p img {
     background-color: #fff;
     width: 2%;
