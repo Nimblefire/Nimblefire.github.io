@@ -7,8 +7,11 @@ function getRequest(city) {
         case 'como':
             id = 6542055;
             break;
-        case 'milano':
-            id = 6542283;
+        case 'varenna':
+            id = 3164701;
+            break;
+        case 'bellagio':
+            id = 3182230;
             break;
         default:
             document.write('Error in the code, please contact maintenance')
@@ -43,8 +46,11 @@ function daysTemperatures(city) {
         case 'como':
             id = 6542055;
             break;
-        case 'milano':
-            id = 6542283;
+        case 'varenna':
+            id = 3164701;
+            break;
+        case 'bellagio':
+            id = 3182230;
             break;
         default:
             document.write('Error in the code, please contact maintenance')
