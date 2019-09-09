@@ -172,6 +172,12 @@ h2 {text-align: center;font-size:2rem;text-shadow:3px 3px 5px #777;}
     display: flex;
 }
 
+.fa-facebook {
+    border: solid 2px white;
+    background: #ffffff;
+    color: #0059ff;
+}
+
 .contact-info p img {
     background-color: #fff;
     width: 3%;

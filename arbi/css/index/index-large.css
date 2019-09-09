@@ -162,7 +162,7 @@ main {
 }
 
 .fa-facebook {
-    padding:5px;
+    border: solid 2px white;
     background: #ffffff;
     color: #0059ff;
 }
