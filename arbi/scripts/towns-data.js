@@ -34,7 +34,7 @@ function populateBox(jsonObj){
         cityMotto.textContent = (document.createElement('strong').textContent = 'Main Feature: ') + towns[i].mainFeature;
         yearP.textContent = (document.createElement('strong').textContent = 'Notable People: ') + towns[i].famousPeople;
         populationP.textContent = (document.createElement('strong').textContent = 'Population: ') + towns[i].currentPopulation;
-        rainFall.textContent = (document.createElement('strong').textContent = 'Annual Rain Fall: ') + towns[i].averageRainfall + " mm";
+        rainFall.textContent = (document.createElement('strong').textContent = 'Foundation Year: ') + towns[i].foundationYear;
         townImg.src = 'image/' + towns[i].name.toLowerCase().trim() + '.png';
 
         townFigure.appendChild(townImg);
