@@ -5,12 +5,13 @@
     "mainFeature": "Como Cathedral",
     "famousPeople": "Alessandro Volta",
     "currentPopulation": 83320,
-    "averageRainfall": 1.072,
+    "foundationYear": "1st century BC",
     "events" : [
-      "June 23-July 11: Lake Como, magic cocktails in Villa del Balbianello",
-      "July 11: Negrita in concert",
-      "July 27-29: Lake Como Film Night",
-      "November 24-January 6: Como Christmas Markets"
+      "Tour of the Como Cathedral",
+      "Como Christmas Markets",
+      "Flight over the Lake",
+      "Romantic lake-side walk",
+      "Trip to Brunate"
     ]
   },
   {
@@ -18,26 +19,41 @@
     "mainFeature": "Minor Basilica of San Nicolò",
     "famousPeople": "Alessandro Manzoni",
     "currentPopulation": 48177,
-    "averageRainfall": 1.118,
+    "foundationYear": "6th century BC",
     "events" : [
-      "June 21-August 11: Bellagio and Lake Como Festival",
-      "July 2-September 14: Lecco Jazz Festival",
-      "July 7: Assault to Resegone",
-      "July 20: Lario Nocturnal Raid"
+      "Trek up the Resegone",
+      "Tour of Villa Manzoni",
+      "Lake-side walk",
+      "Visit of the Planetarium",
+      "Tour of The Palazzo delle Paure"
     ]
   },
   {
-    "name": "Milano",
-    "mainFeature": "Milan Cathedral",
-    "famousPeople": "saint Ambrose of Milan",
-    "currentPopulation": 1395274,
-    "averageRainfall": 920.1,
+    "name": "Varenna",
+    "mainFeature": "Castle of Vezio",
+    "famousPeople": "Giovanni Battista Pirelli",
+    "currentPopulation": 728,
+    "foundationYear": 769,
     "events" : [
-      "May 31-October 31: Cinema Bianchini, cinema on the roof of the Gallery",
-      "January 27 2018-December 31 2019: The Secrets of Ca' Granda",
-      "May 8-July 17: Milano Summer Festival",
-      "January 11-September 15: Leonardo & Warhol | The genius experience",
-      "November 30-December 8: L'Artigiano in Fiera"
+      "Visit Castle of Vezio",
+      "Tour of Villa Monastero",
+      "Passeggiata lungo lago (The lovers' walk)",
+      "Guided excursion on the Sentiero del Viandante",
+      "The Patriarch's Greenway Path"
+    ]
+  },
+  {
+    "name": "Bellagio",
+    "mainFeature": "Villa Serbelloni",
+    "famousPeople": "Enrico Gandola",
+    "currentPopulation": 3747,
+    "foundationYear": "7th to 5th century BC",
+    "events" : [
+      "Climb to the Sanctuary of the Madonna del Ghisallo",
+      "Visit to the Basilica of St. James",
+      "Visit Villa Serbelloni",
+      "Kajak tour of the Lake",
+      "E-bike tour of Bellagio"
     ]
   }
   ]
